@@ -1,31 +1,30 @@
-// Objects and object literals
+// Difference between JSON and object literals
+// Javascript Object Notation
 
-// {}; is shorthand for 'new Object();'
-var chi = {
-  firstname:  'Chi',
-  lastname:   'Bui',
-  address: {
-    street: '111 Main St.',
-    city:   'Sydney',
-    state:  'NSW'
-  }
-};
 
-function greet(person) {
-  console.log('Hi ' + person.firstname);
-};
+// object literal
+var objectLiteral = {
+  firstname: 'Mary',
+  isAProgrammer: true
+}
 
-greet(chi);
+// console.log(objectLiteral);
 
-greet({
-  firstname:  'Mary',
-  lastname:   'Doe'
-});
+//JSON
+// {
+//   "firstname": "Mary",
+//   "isAProgrammer": true
+// }
 
-// Mixing methodologies
+// turns object literal into JSON
 
-chi.address2 = {
-  street: '222 Second St.'
-};
+// a = JSON.stringify(objectLiteral);
+// console.log("stringify - predefined ", a);
+console.log("stringify - inline     ", JSON.stringify(objectLiteral));
 
-console.log(chi.address2.street);
+
+// convert JSON string into Javascript object
+
+var jsonValue = JSON.parse('{ "firstname": "John", "isAProgrammer": false }');
+
+console.log('JSON to object         ',jsonValue);
