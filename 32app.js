@@ -1,4 +1,4 @@
-// Faking namespaces
+// 32. Faking namespaces
 
 var greet = 'Hello'
 var greet = 'Hola'

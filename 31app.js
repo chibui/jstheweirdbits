@@ -1,4 +1,4 @@
-// Objects and object literals
+// 31. Objects and object literals
 
 // {}; is shorthand for 'new Object();'
 var chi = {
