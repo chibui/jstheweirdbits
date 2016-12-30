@@ -34,13 +34,13 @@ c.log(); // Returns c which is name: 'The c object',
 var d = {
   name: 'The d object',
   log: function() {
-    this.name = 'Updated d object'; // mutate d object name to ' updated d object'
+    this.name = 'Updated d object'; // mutate d object name to 'updated d object'
     console.log(this);
 
     var setname = function(newname) { // mutate again
       this.name = newname;
     }
-    setname('Updated again! The d object');
+    setname('Updated again! The d object'); // function inside a function of a object
     console.log(this); // the bug is that it will now mutate the global rather than d object
   }
 }
