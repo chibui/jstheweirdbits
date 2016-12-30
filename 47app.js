@@ -1,4 +1,4 @@
-// 47. Understanding arrays part 2
+// 47. Understanding closures part 2
 
 function buildFunctions() {
   
